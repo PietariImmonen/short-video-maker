@@ -30,7 +30,7 @@ def video():
 
     video = VideoFileClip("new_filename.mp4")
     generator = lambda txt: TextClip(
-        txt, color='white', fontsize=20, font='Georgia-Regular',
+        txt, color='white', fontsize=40, font='montserrat',
         stroke_width=3, method='caption', size=video.size)
     subtitless = SubtitlesClip("subs.srt", generator)
 
